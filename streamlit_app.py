@@ -16,4 +16,4 @@ with st.expander('data'):
   y
 # "","island","bill_length_mm","bill_depth_mm","flipper_length_mm","","sex
 with st.expander('data visualization'):
-  sc.scatter_chat(data=df,x='bill_length_mm' ,y='body_mass_g' , color='species')
+  st.scatter_chat(data=df,x='bill_length_mm' ,y='body_mass_g' , color='species')
