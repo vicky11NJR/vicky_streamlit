@@ -14,3 +14,6 @@ with st.expander('data'):
   st.write('Y')
   y = df.species
   y
+# "","island","bill_length_mm","bill_depth_mm","flipper_length_mm","","sex
+with st.expander('data visualization'):
+  sc.scatter_chat(data=df,x='bill_length_mm' ,y='body_mass_g' , color='species')
